@@ -1,0 +1,284 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+nav {
+    background-color: #000;
+    padding: 20px;
+    height: 80px;
+}
+
+nav h1 {
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style the header */
+header {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    padding: 100px 0; /* Adjust padding for smaller screens */
+}
+
+/* Style the video inside the header */
+header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    flex-direction: column;
+    
+}
+.hero-content .btn {
+    background-color: black;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.hero-content .btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+
+.btn {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo1 {
+    width: 70%;
+}
+
+/* Styling for the map container */
+.map-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+/* Styling for the map iframe */
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Styling for the button on the map */
+.map-button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/* Styles for the "Get Directions" button */
+#directions-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Additional styling for the button on hover (optional) */
+#directions-button:hover {
+    background-color: rgb(34, 19, 168);
+    color: #49bef5;
+}
+
+/* Style the rest of the sections as needed */
+#about {
+    border: 1px solid white;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    width: 100%;
+    padding: 20px; /* Add padding to separate the text from the edges */
+}
+
+#aboutuss {
+    font-size: x-large;
+    padding: auto;
+    margin: auto;
+}
+
+#services {
+    border: 1px solid #fff;
+    padding: 20px; /* Add padding to separate the content from the edges */
+}
+
+/* Ensure the logo and navbar are vertically aligned in the center */
+.navbar-brand,
+.navbar-toggler {
+    display: flex;
+   
+}
+
+/* Adjust the spacing between the logo and navbar toggler */
+.navbar-brand {
+    margin-right: 20px;
+}
+/* Set the initial background color of the navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #000;
+    z-index: 999;
+    transition: background-color 0.3s ease;
+}
+
+/* Set the background to transparent when the "transparent-bg" class is present */
+.navbar.transparent-bg {
+    background-color: transparent;
+}
+
+/* Floating Instagram and WhatsApp Icons */
+/* Floating Instagram and WhatsApp Icons */
+#social-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    display: flex;
+    /* Add the following line to align icons vertically at the bottom */
+    flex-direction: column;
+  }
+  
+  .social-icon-link {
+    margin-bottom: 10px; /* Add some spacing between the icons */
+    border-radius: 50%;
+    background-color: #000000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icon {
+    display: block;
+  }
+  
+  .social-icon-link:hover {
+    transform: scale(1.1);
+  }
+  
+
+
+
+@media (max-width: 767px) {
+    /* Styles for screens up to 767px (e.g., smartphones) */
+  
+    /* Adjust the logo size and remove margin */
+    .logo1 {
+        max-height: 40px; /* Adjust the value as needed */
+    }
+
+    .navbar-brand {
+        
+        margin-right: auto;
+
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+
+    }
+
+    /* Reduce the font size for the navigation links */
+    nav ul li a {
+        font-size: 14px;
+    }
+  
+    /* Adjust hero section padding for smaller screens */
+    .hero {
+        padding: 100px 0;
+    }
+  
+    /* Adjust hero section font size for smaller screens */
+    .hero h2 {
+        font-size: 32px;
+    }
+  
+    .hero p {
+        font-size: 16px;
+    }
+
+    /* Adjust about section font size for smaller screens */
+    #aboutuss {
+        font-size: 16px;
+    }
+
+    /* Adjust services section padding for smaller screens */
+    #services {
+        padding: 10px;
+    }
+}
