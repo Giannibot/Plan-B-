@@ -230,7 +230,17 @@ header video {
   .social-icon-link:hover {
     transform: scale(1.1);
   }
+
+  #logoBk {
+    width: 40%;
+   
+  }
   
+  #iconBk {
+    width: 30%;
+    
+  
+  }
 
 
 
@@ -239,7 +249,7 @@ header video {
   
     /* Adjust the logo size and remove margin */
     .logo1 {
-        max-height: 20px; /* Adjust the value as needed */
+       max-height: 40px;
     }
 
     .navbar-brand {
