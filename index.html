@@ -142,7 +142,7 @@
                     <p id="aboutuss">
                         Welcome to Plan B Barbershop, where professionalism meets quality. Our highly skilled barbers
                         are dedicated to providing a premium grooming experience.
-                        Situated by the sea in Sliema's Tower Road, we take pride in going the extra mile for our
+                        Situated by the sea in Sliema, we take pride in going the extra mile for our
                         clients. Enjoy our expert services, complemented by premium alcoholic beverages and the finest
                         coffee, creating a grooming journey unlike any other. Experience excellence at Plan B
                         Barbershop.</p>
@@ -155,7 +155,7 @@
                             width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <div class="map-button-container">
-                            <button id="directions-button">Get Directions</button>
+                            <button id="directions-button-1">Get Directions</button>
                         </div>
                     </div>
                     <br>
@@ -163,11 +163,12 @@
 
                     <div class="map-container">
                         <div class="map-overlay"></div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3231.595357754097!2d14.497196076337762!3d35.90792481748702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130e45897927cc45%3A0xd28f4b811fb2749f!2sPLAN%20B%20Barbershop%20the%20strand!5e0!3m2!1sen!2smt!4v1707907513933!5m2!1sen!2smt"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+                        <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3231.595357754097!2d14.497196076337762!3d35.90792481748702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130e45897927cc45%3A0xd28f4b811fb2749f!2sPLAN%20B%20Barbershop%20the%20strand!5e0!3m2!1sen!2smt!4v1707907513933!5m2!1sen!2smt"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <div class="map-button-container">
-                            <button id="directions-button">Get Directions</button>
+                            <button id="directions-button-2">Get Directions</button>
                         </div>
                     </div>
                     <p style="font-family: 'Arial', sans-serif; font-weight: bold;">The Strand Location</p>
@@ -201,23 +202,28 @@
 
     <!-- Contact Section -->
     <section id="contact">
-        <div class="container">
+        <div class="container text-center">
             <h3>Contact Us</h3>
-            <p>Phone: +356 9931 9792</p>
-            <p>Address: 272 Tower Road, St Julian's SLM 1600, Malta</p>
+            <p>Phone: +356 9931 9792</p>
         </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script>
-        document.getElementById("directions-button").addEventListener("click", function () {
+        document.getElementById("directions-button-1").addEventListener("click", function () {
             var barbershopName = 'Plan%20B%20Barbershop'; // Replace with your barbershop name URL encoded
             var mapLink = 'https://www.google.com/maps?q=' + barbershopName;
             window.open(mapLink, '_blank');
         });
+
+        document.getElementById("directions-button-2").addEventListener("click", function () {
+            var barbershopName = 'PLAN%20B%20Barbershop%20the%20strand'; // Replace with your new location name URL encoded
+            var mapLink = 'https://www.google.com/maps?q=' + barbershopName;
+            window.open(mapLink, '_blank');
+        });
     </script>
-    
-    <div id="sbw_riqhkj">
+
+<div id="sbw_riqhkj">
 
     </div>
 </body>

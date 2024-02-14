@@ -227,7 +227,7 @@ header video {
 }
 
 /* Styles for the "Get Directions" button */
-#directions-button {
+#directions-button-1, #directions-button-2 {
     background-color: black;
     color: white;
     padding: 10px 20px;
@@ -240,7 +240,7 @@ header video {
 }
 
 /* Additional styling for the button on hover (optional) */
-#directions-button:hover {
+#directions-button:hover, #directions-button-2:hover {
     background-color: rgb(34, 19, 168);
     color: #49bef5;
 }
