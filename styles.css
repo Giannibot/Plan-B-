@@ -397,9 +397,9 @@ header video {
         padding: 10px;
     }
 }
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .col-md-6 {
         margin-left: 5%;
         width: 90% !important;
     }
-}
+} */
