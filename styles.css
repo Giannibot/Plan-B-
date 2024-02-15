@@ -22,6 +22,11 @@ h2#black
 {
     color: black;
 }
+h3 {
+    font-weight: bold;
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
 #popup {
     overflow-y: scroll;
     overflow: auto;
@@ -191,6 +196,7 @@ header video {
 
 /* Styling for the map container */
 .map-container {
+    order: 1;
     position: relative;
     overflow: hidden;
     padding-top: 56.25%;
@@ -244,7 +250,10 @@ header video {
     background-color: rgb(34, 19, 168);
     color: #49bef5;
 }
-
+.row {
+    order: -1;
+    cursor: pointer;
+}
 /* Style the rest of the sections as needed */
 #about {
     border: 1px solid white;
@@ -338,6 +347,7 @@ header video {
     .logo1 {
        max-height: 40px;
     }
+    
 
     .navbar-brand {
         
@@ -364,7 +374,14 @@ header video {
     .hero h2 {
         font-size: 32px;
     }
-  
+    #about
+    {
+        margin-right: 40%;
+    }
+    .container
+    {
+        max-width: 70%;
+    }
     .hero p {
         font-size: 16px;
     }
@@ -374,8 +391,15 @@ header video {
         font-size: 16px;
     }
 
+    
     /* Adjust services section padding for smaller screens */
     #services {
         padding: 10px;
+    }
+}
+@media (min-width: 768px) {
+    .col-md-6 {
+        margin-left: 5%;
+        width: 90% !important;
     }
 }
