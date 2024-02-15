@@ -107,6 +107,13 @@ header video {
     flex-direction: column;
     
 }
+.Director
+{
+    background-color: silver;
+}
+.or-text {
+    display: block;
+}
 .hero-content .btn {
     background-color: black;
     color: white;
@@ -123,6 +130,18 @@ header video {
     color: #000000;
 }
 
+
+#director-btn
+{
+    background-color: silver;
+    color: black;
+}
+
+#director-btn:hover
+{
+    background-color: black;
+    color: white;
+}
 .hero-content h2 {
     color: white;
     font-size: 48px;
@@ -133,6 +152,10 @@ header video {
     color: white;
     font-size: 20px;
     margin-bottom: 5%;
+}
+.hero-content p2 {
+    color: white;
+    font-size: 20px;
 }
 #popup h2 {
     color: #333;
@@ -338,13 +361,12 @@ header video {
     .logo1 {
        max-height: 40px;
     }
-
+    
     .navbar-brand {
         
         margin-right: auto;
 
     }
-
     .navbar-toggler {
         margin-left: auto;
 
@@ -379,3 +401,16 @@ header video {
         padding: 10px;
     }
 }
+@media (max-width: 480px) {
+    #social-icons {
+      flex-direction: row;
+      bottom: 10px;
+      right: 10px;
+    }
+}
+@media (max-width: 270px) {
+    #social-icons {
+      visibility: hidden;
+    }
+}
+
